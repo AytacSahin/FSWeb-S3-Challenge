@@ -4,25 +4,37 @@
 
 <head>
 	<meta charset="utf-8">
-
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Sprint Challenge - Anasayfa</title>
-
+	<link rel="stylesheet" href="css/index.css"/>
 	<link href="https://fonts.googleapis.com/css?family=Roboto|Rubik" rel="stylesheet">
 	<script src="https://kit.fontawesome.com/5b12ffad4b.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-	<div>
-		<!-- header -->
-		<header>
-			<div>
-				ERGİNEER BAR VE MANGAL
-
-				<!-- nav -->
-				Menü
-				Rezervasyonlar
-				Özel Teklifler
-				İletişim
+	<div class="main container">
+		
+		<header class="header">
+			<div class="header-container">
+				<div class="header-text">
+					<h1><a href="./index.html">ERGİNEER BAR VE MANGAL</a></h1>
+				</div>
+				<!-- NOTE: test içerisinde "headerNavLinks.innerHTML.split(/<i /i)" ilk gördüğü "nav" içerisinde takıldığı ve devam edemediği için tasarım değiştirmek zorunda kaldım. -->
+				<div class="icons">
+					<nav>
+						<i class="fa-brands fa-square-facebook"></i>
+						<i class="fa-brands fa-square-twitter"></i>
+						<i class="fa-brands fa-square-instagram"></i>
+					</nav>
+				</div>
+				<nav>
+					<div class="menu-items">
+						<a href="./menu.html">Menü</a>
+						<a href="./menu.html">Rezervasyonlar</a>
+						<a href="./menu.html">Özel Teklifler</a>
+						<a href="./menu.html">İletişim</a>
+					</div>
+				</nav>
 			</div>
 		</header>
 
@@ -30,29 +42,24 @@
 		<section class="gallery">
 			<div>
 				<h2>YEMEKLERİMİZ</h2>
-
-				img/food-avocadotoast.jpg
-
-				img/food-burger.jpg
-
-				img/food-poutine.jpg
-
-				img/food-ribs.jpg
-
-				img/food-sandwich.jpg
-
-				img/food-sausage.jpg
-
-				img/food-steak.jpg
-
-				img/food-tacos.jpg
-
-				img/food-wings.jpg
+				<div class="image-container">
+					<img src="img/food-avocadotoast.jpg">
+					<img src="img/food-burger.jpg">
+					<img src="img/food-poutine.jpg">
+					<img src="img/food-ribs.jpg">
+					<img src="img/food-sandwich.jpg">
+					<img src="img/food-sausage.jpg">
+					<img src="img/food-steak.jpg">
+					<img src="img/food-tacos.jpg">
+					<img src="img/food-wings.jpg">
+				</div>
 			</div>
 		</section>
 
 		<!-- spacer -->
-		<div class="spacer"></div>
+		<div class="spacer">
+			
+		</div>
 
 		<!-- about section -->
 		<section class="about">
@@ -123,19 +130,30 @@
 		<div class="spacer-sm"></div>
 
 		<!-- footer -->
-		<footer>
-			<!-- email signup -->
-			Mail listemize katılın!
-			Üye Ol
-			<!-- nav -->
-			Menü
-			Rezervasyonlar
-			Özel Teklifler
-			İletişim
-			<!-- copyright -->
-			©2022 ERGİNEER Restoran Zinciri, Tüm hakları saklıdır.
+		<footer class="footer">
+			<div class="footer-email-bar">
+				<h4>Mail listemize katılın!</h4>
+				<form>
+					<input type="text" name="" placeholder="E-posta Adresi">
+					<button type="button">Üye Ol</button>
+				</form>
+			</div>
+			<div class="footer-menu-bar">
+				<nav>
+					<div class="menu-items">
+						<a href="./menu.html">Menü</a>
+						<a href="./reserv.html">Rezervasyonlar</a>
+						<a href="./offers.html">Özel Teklifler</a>
+						<a href="./commini.html">İletişim</a>
+					</div>
+				</nav>
+			<div class="footer-menu-bar-text">
+				<h3>©2022 ERGİNEER Restoran Zinciri, Tüm hakları saklıdır.</h3>
+			</div>
 		</footer>
+
 	</div>
+
 </body>
 
 </html>
